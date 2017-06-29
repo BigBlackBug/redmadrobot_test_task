@@ -8,7 +8,7 @@ def dot_product(first_vector, second_vector):
     [number, sequence_length, ...]
     :param first_vector:
     :param second_vector:
-    :return: cross product of these vectors
+    :return: dot product of these vectors
     """
     first_generator = Generator(first_vector)
     second_generator = Generator(second_vector)
