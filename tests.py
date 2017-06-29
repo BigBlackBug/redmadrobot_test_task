@@ -34,7 +34,7 @@ class TestGenerator(unittest.TestCase):
         self.assertEqual(0, generator.vector_length)
 
 
-class TestCrossProduct(unittest.TestCase):
+class TestDotProduct(unittest.TestCase):
     def test_ok_input(self):
         first = [2, 2]
         second = [3, 2]
