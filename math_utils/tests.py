@@ -27,11 +27,11 @@ class TestUnpacker(unittest.TestCase):
 
     def test_vector_length(self):
         unpacker = VectorUnpacker([5, 3, 4, 2])
-        self.assertEqual(5, unpacker.vector_length)
+        self.assertEqual(5, unpacker.unpacked_vector_length)
 
     def test_zero_vector_length(self):
         unpacker = VectorUnpacker([])
-        self.assertEqual(0, unpacker.vector_length)
+        self.assertEqual(0, unpacker.unpacked_vector_length)
 
 
 class TestDotProduct(unittest.TestCase):

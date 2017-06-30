@@ -4,7 +4,7 @@ class VectorUnpacker:
             raise ValueError("Number of items in a vector is not even")
         self._vector = vector
         self._vector_length = self._calculate_vector_length(vector)
-        self._current_piece = self._get_current_piece(self._vector, 0)
+        self._current_piece = self._get_piece(self._vector, 0)
         self._piece_index = 0
         self._counter = 0
 
@@ -17,7 +17,7 @@ class VectorUnpacker:
                 if self._counter == self._current_piece[1]:
                     # extract next piece
                     self._piece_index += 1
-                    self._current_piece = self._get_current_piece(
+                    self._current_piece = self._get_piece(
                         self._vector,
                         self._piece_index)
                     self._counter = 0
@@ -26,11 +26,11 @@ class VectorUnpacker:
         return iter(self)
 
     @property
-    def vector_length(self):
+    def unpacked_vector_length(self):
         return self._vector_length
 
     @staticmethod
-    def _get_current_piece(vector, piece_index):
+    def _get_piece(vector, piece_index):
         return vector[piece_index * 2:piece_index * 2 + 2]
 
     @staticmethod
