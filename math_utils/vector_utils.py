@@ -6,7 +6,7 @@ from math_utils.vector_unpacker import VectorUnpacker
 
 def dot_product(first_vector, second_vector):
     """
-    calculates a dot product of vectors of the following format
+    calculates dot product of vectors of the following format
     [number, sequence_length, ...]
     :param first_vector:
     :param second_vector:
