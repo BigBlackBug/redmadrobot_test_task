@@ -26,6 +26,13 @@ def dot_product(first_vector, second_vector):
 
 
 def generate_dense_vector(expanded_vector_size, number_of_pieces):
+    """
+    generates a dense vector with the following format
+    [number, sequence_length, ...] to be used in dot_product function
+    :param expanded_vector_size: size of the vector if it was expanded(unpacked)
+    :param number_of_pieces: number of (number, sequence_length) pieces
+    :return: a dense vector
+    """
     vector = []
     remaining = expanded_vector_size
     piece_length = int(expanded_vector_size / number_of_pieces)
