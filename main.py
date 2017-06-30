@@ -5,7 +5,7 @@ from math_utils import vector_utils
 DEFAULT_NUMBER_OF_PIECES = 2
 if __name__ == '__main__':
     parser = ArgumentParser(description='Dot product calculation test client')
-    parser.add_argument("-s", "--expanded_vector_size", type=int, default=6,
+    parser.add_argument("-s", "--expanded_vector_size", type=int, default=7,
                         help="generated vectors will have the specified size")
     args = parser.parse_args()
     first_vector = vector_utils.generate_dense_vector(
