@@ -17,6 +17,7 @@ def dot_product(first_vector, second_vector):
     if first_unpacker.vector_length != second_unpacker.vector_length:
         raise ApplicationError("Unpacked vector sizes are unequal")
 
+    # looks better than a 'map' one-liner to me
     value = 0
     for piece in zip(first_unpacker(), second_unpacker()):
         value += piece[0] * piece[1]
