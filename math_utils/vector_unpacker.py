@@ -1,4 +1,4 @@
-class Generator:
+class VectorUnpacker:
     def __init__(self, vector):
         if len(vector) % 2 != 0:
             raise ValueError("Number of items in a vector is not even")
@@ -31,7 +31,7 @@ class Generator:
 
     @staticmethod
     def _get_current_piece(vector, piece_index):
-        return vector[piece_index:piece_index + 2]
+        return vector[piece_index * 2:piece_index * 2 + 2]
 
     @staticmethod
     def _calculate_vector_length(vector):
