@@ -20,8 +20,8 @@ python main.py [-h] [-s EXPANDED_VECTOR_SIZE]
 Аргументы:
   -h, --help            хэлп
   -s EXPANDED_VECTOR_SIZE, --expanded_vector_size EXPANDED_VECTOR_SIZE
-                        сгенерировать два вектора с данной длиной в разжатом
-                        состоянии
+                        два сгенерированных демонстрационных вектора будут иметь
+                        данную длину в разжатом состоянии
 
 TODO
 ----
