@@ -15,13 +15,12 @@
 
 Запуск
 ------
-python main.py [-h] [-s EXPANDED_VECTOR_SIZE]
+``python main.py [-h] [-s EXPANDED_VECTOR_SIZE]``
 
 Аргументы:
   -h, --help            хэлп
   -s EXPANDED_VECTOR_SIZE, --expanded_vector_size EXPANDED_VECTOR_SIZE
-                        два сгенерированных демонстрационных вектора будут иметь
-                        данную длину в разжатом состоянии
+                        длина сгенерированных тестовых векторов
 
 TODO
 ----
